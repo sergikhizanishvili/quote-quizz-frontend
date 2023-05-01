@@ -8,12 +8,14 @@ import CreateQuestion from "./components/admin/CreateQuestion";
 import Question from "./components/admin/Question";
 import Home from "./components/Home";
 import Session from "./components/Session";
+import TopScorers from "./components/TopScorers";
 
 function App() {
 	return (
 		<Routes>
 			<Route path="/admin/login" element={<Login />} />
 			<Route path="/" element={<Home />} />
+			<Route path="/top" element={<TopScorers />} />
 			<Route path="/session/:sessionId" element={<Session />} />
 			
 			<Route element={ <ProtectedRoute /> }>

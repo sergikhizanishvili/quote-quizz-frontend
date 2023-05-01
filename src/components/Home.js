@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import Api from "./services/Api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Layout from "./Layout";
+import Header from "./Header";
 
 function Home() {
     const navigate = useNavigate();
@@ -47,7 +48,7 @@ function Home() {
 
     return (
         <Layout>
-            <h1 className="my-4">Quote Quizz</h1>
+            <Header />
 
             <Form onSubmit={startSession} className="w-100 mt-5">
                 <Row>

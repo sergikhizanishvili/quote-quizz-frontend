@@ -74,7 +74,7 @@ function Stats({total, answered, correct}) {
             </div>
 
             <div className="text-center mt-4">
-                <Link to="/" className="btn btn-primary">Go to Home Page</Link>
+                <Link to="/" className="btn btn-primary">Restart</Link>
             </div>
         </Layout>
     );

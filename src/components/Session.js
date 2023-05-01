@@ -163,13 +163,13 @@ function Session() {
 
                     {incorrectMsg ?
                         <p className="text-danger py-3">
-                            You are incorrect. Correct answer is "{'binary' === question.type ? correct : question.answers[correct]}"
+                            Sorry, you are wrong! The right answer is "{'binary' === question.type ? correct : question.answers[correct]}"
                         </p>
                         : ''
                     }
 
                     {correctMsg ?
-                        <p className="text-success py-3">You are correct</p>
+                        <p className="text-success py-3">Correct! The right answer is "{question.answers[correct]}"</p>
                         : ''
                     }
 
