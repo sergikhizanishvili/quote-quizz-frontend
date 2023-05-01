@@ -22,7 +22,7 @@ npm install
 Next - rename .env.example file to .env and update Base Uri environment variable:
 
 ```
-REACT_APP_BASE_URL
+REACT_APP_BASE_URL=
 ```
 
 ### Production
