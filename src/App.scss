@@ -1,0 +1,27 @@
+$dark: #212529;
+
+$link-color: $dark;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+    color: $dark;
+}
+
+.btn-link,
+.icon-btn {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: transparent !important;
+    }
+}
+
+a {
+    text-decoration: none;
+}
